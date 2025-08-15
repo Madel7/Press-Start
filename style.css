@@ -1,0 +1,227 @@
+@font-face {
+  font-family: 'glitch';
+  src: url('./imgs/virus-01.otf.woff2') format('woff2')
+  
+}
+
+body {
+  font-family: 'MyCustomFont', sans-serif;
+}
+
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+body{background-color: black; color: white;}
+
+header {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  position: relative;
+  top: 10px;
+  filter: invert(1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+
+nav li {
+  padding-top: 25px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-right: 20px;
+}
+nav a {
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: white;
+}
+.sign {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 15px;
+}
+
+.sign img {
+  border: black solid 3px;
+  border-radius: 50%;
+  filter: invert(1);
+}
+
+.sign p {
+  padding-top: 8px;
+  padding-left: 3px;
+  font-weight: 700;
+  word-spacing: -2px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.line {
+  width: 25%;
+  height: 3px;
+  background-color: white;
+  margin: auto;
+  margin-left: 37.5%;
+}
+
+
+
+.welcome {
+  width: 100%;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+.first-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./imgs/dd12d5ec3b6b6bf7918b6f203599556910a96eaf.gif);
+    background-size: cover;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.first-title {
+    text-align: center;
+    padding-top: 250px;
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
+.chant {margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'glitch';
+    color: white;
+    user-select: none;
+}
+
+.news{width: 90%;
+height:600px}
+
+
+.slider {
+  width: 80%;
+  height: 600px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  animation: slide 32s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+
+.slides img {
+  width: 100%; /* each image fills the slider container */
+  height: 600px;
+  object-fit: cover;
+  flex: 0 0 100%; /* ensures no extra space */
+  filter: brightness(50%);
+  
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    width: 100%;
+    margin: 0%;
+  }
+  header .logo {
+    width: 125px;
+    height: 62.5px;
+  }
+  .sign p {
+    display: none;
+  }
+  .sign {
+    margin-bottom: 12px;
+    margin-right: 5px;
+  }
+  nav li {
+    font-size: 16px;
+    padding-right: 15px;
+  }
+}
+
+.games{width:100%; height:600px; background-color: white; margin-top: 20px;}
+
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(97, 97, 97);
+  text-align: center;
+  position: relative;
+  margin-top: 0px;
+}
+
+footer img {
+  width: 160px;
+  height: 150px;
+  filter: hue-rotate(100deg) saturate(3);
+}
+
+.icons {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 0;
+}
+
+.icons li a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.icons li a:hover {
+  color: #1da1f2; /* Example hover color */
+}
+
+
+
