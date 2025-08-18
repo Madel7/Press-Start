@@ -1,71 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Press Start - Home</title>
-    <link rel="stylesheet" href="style.css" />
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Press Start - Home</title>
+  <link rel="stylesheet" href="style.css" />
 
 
-  </head>
-  <body>
-   
+</head>
 
-    <div class="welcome"><div class="first-section"> 
-        <div class="overlay">     <header>
-      <img
-        src="imgs/Logo.png"
-        alt="Press Start"
-        width="150"
-        height="75"
-        class="logo"
-      />
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Games</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#" style="word-spacing: -2px;">Contact Us</a></li>
-        </ul>
-      </nav>
-      <div class="sign">
-        <img src="imgs/login.png" alt="Login" width="30" height="30" />
-        <p>Sign In</p>
+<body>
+
+
+  <div id="home" class="welcome">
+    <div class="first-section">
+      <div class="overlay">
+        <header>
+          <img src="imgs/Logo.png" alt="Press Start" width="150" height="75" class="logo" />
+          <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#games">Games</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#gotofooter" style="word-spacing: -2px;">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div class="sign">
+            <img src="imgs/login.png" alt="Login" width="30" height="30" />
+            <p>Sign In</p>
+          </div>
+        </header>
+
+        <div class="line"></div>
+        <h2 class="first-title">PRESS START</h2>
+        <p class="chant">TO PLAY</p>
+
       </div>
-    </header>
 
-    <div class="line"></div>
-            <h2 class="first-title">PRESS START</h2>
-            <p class="chant">TO PLAY</p>
-           
-        </div>
+    </div>
+  </div>
+  <div class="news"></div>
+  <div id="news" class="slider">
+    <div class="slides">
+      <img
+        src="https://www.games2egypt.com/Images/Slides/209?lang=en&fileFormat=1&lastModified=638905265703370000&width=900"
+        alt="Image 1" />
+      <img
+        src="https://imageio.forbes.com/specials-images/imageserve/66ac8d978004eb7b9e302dbb/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+        alt="Image 2" />
+      <img src="https://www.gaming.net/wp-content/uploads/2023/04/spiderman-2.jpg" alt="Image 3" />
+      <img src="https://cdn.wccftech.com/wp-content/uploads/2024/08/red-dead-redemption-pc-HD-scaled.jpg"
+        alt="Image 4" />
 
-    </div></div>
-    <div class="news"></div>
-    <div class="slider">
-      <div class="slides">
-        <img src="https://www.games2egypt.com/Images/Slides/209?lang=en&fileFormat=1&lastModified=638905265703370000&width=900" alt="Image 1" />
-        <img src="https://imageio.forbes.com/specials-images/imageserve/66ac8d978004eb7b9e302dbb/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds" alt="Image 2" />
-        <img src="https://www.gaming.net/wp-content/uploads/2023/04/spiderman-2.jpg" alt="Image 3" />
-        <img src="https://cdn.wccftech.com/wp-content/uploads/2024/08/red-dead-redemption-pc-HD-scaled.jpg" alt="Image 4" />
-    
     </div>
-    </div>
-    <div class="games"></div>
-      <footer>
+  </div>
+  <!---==================------------------------------------->
+  <div id="games" class="games">
+    <div class="section">Most Popular Games</div>
+<div class="container">
+  <div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/4/46/Video_Game_Cover_-_The_Last_of_Us.jpg" alt="">
+    <p class="price">750 EGP</p><p class="title">The Last Of Us</p><button class="buy">purchase</button></div>
+<div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/c/ce/FFVIIRemake.png" alt=""><p class="price">750 EGP</p><p class="title">The Last Of Us</p><button class="buy">purchase</button></div>
+<div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/b/b6/Ghost_of_Tsushima.jpg" alt=""><p class="price">750 EGP</p><p class="title">The Last Of Us</p><button class="buy">purchase</button></div>
+<div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/Detroit_Become_Human.jpg/250px-Detroit_Become_Human.jpg" alt=""><p class="price">750 EGP</p><p class="title">The Last Of Us</p><button class="buy">purchase</button></div>
+<div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/5/53/WWE_2k25_cover.jpg" alt=""><p class="price">750 EGP</p><p class="title">The Last Of Us</p><button class="buy">purchase</button></div>
+<p class="viewall">View ALL Games...</p>
+</div>
+  </div>
+  <!-------------------------------------------------------->
+  <footer id="gotofooter">
     <img src="imgs/Logo.png">
-       </div>
-                <ul class="icons "> 
-                    <li><a href="R" class="ifirst"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#" class="isecond"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#" class="ithird"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#" class="iforth"><i class="fa-brands fa-tiktok"></i></a></li>
-                    <li><a href="#" class="ififth"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                </ul>
-             
-            </div> 
+    </div>
+    <ul class="icons ">
+      <li><a href="R" class="ifirst"><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href="#" class="isecond"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="#" class="ithird"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="#" class="iforth"><i class="fa-brands fa-tiktok"></i></a></li>
+      <li><a href="#" class="ififth"><i class="fa-brands fa-linkedin-in"></i></a></li>
+    </ul>
+
+    </div>
   </footer>
-  </body>
+</body>
 
 </html>
