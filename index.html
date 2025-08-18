@@ -31,7 +31,7 @@
       </nav>
       <div class="sign">
         <img src="imgs/login.png" alt="Login" width="30" height="30" />
-        <p>Sign In</p>
+        <p><a href="signin.html" style="color: white; text-decoration: none;">Sign In</a></p>
       </div>
     </header>
 
@@ -42,7 +42,33 @@
         </div>
 
     </div></div>
-    <div class="news"></div>
+
+
+    <!-- Admin Controls -->
+    <div id="adminControls">
+        <h3>Add News</h3>
+        <form id="addNewsForm">
+            <div>
+                <label for="newsTitle">Title:</label>
+                <input type="text" id="newsTitle" required>
+            </div>
+            <div>
+                <label for="newsDescription">Description:</label>
+                <textarea id="newsDescription" required></textarea>
+            </div>
+            <div>
+                <label for="newsImageUrl">Image URL:</label>
+                <input type="url" id="newsImageUrl" placeholder="https://example.com/image.jpg">
+            </div>
+            <button type="submit">Add News</button>
+        </form>
+    </div>
+
+
+
+    <div class="news">
+    <div id="newsContainer"></div>
+    </div>
     <div class="slider">
       <div class="slides">
         <img src="https://www.games2egypt.com/Images/Slides/209?lang=en&fileFormat=1&lastModified=638905265703370000&width=900" alt="Image 1" />
@@ -66,6 +92,10 @@
              
             </div> 
   </footer>
+
+<!-- <script src="auth.js"></script> -->
+  <script src="main.js"></script>
+  
   </body>
 
 </html>
