@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press Start - Sign In</title>
+    <link rel="stylesheet" href="auth-style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <div class="logo-section">
+                <img src="imgs/Logo.png" alt="Press Start" class="auth-logo">
+                <h2>PRESS START</h2>
+            </div>
+            
+            <form id="signinForm" class="auth-form">
+                <h3>Sign In</h3>
+                
+                <div class="input-group">
+                    <label for="signinEmail">Email or Username:</label>
+                    <input type="text" id="signinEmail" name="signinEmail" required>
+                    <span class="error-message" id="signinEmailError"></span>
+                </div>
+                
+                <div class="input-group">
+                    <label for="signinPassword">Password:</label>
+                    <input type="password" id="signinPassword" name="signinPassword" required>
+                    <span class="error-message" id="signinPasswordError"></span>
+                </div>
+                
+                <button type="submit" class="auth-btn">Sign In</button>
+                
+                <div class="auth-links">
+                    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+                    <p><a href="index.html">Back to Home</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press Start - Sign Up</title>
+    <link rel="stylesheet" href="auth-style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <div class="logo-section">
+                <img src="imgs/Logo.png" alt="Press Start" class="auth-logo">
+                <h2>PRESS START</h2>
+            </div>
+            
+            <form id="signupForm" class="auth-form">
+                <h3>Sign Up</h3>
+                
+                <div class="input-group">
+                    <label for="signupUsername">Username:</label>
+                    <input type="text" id="signupUsername" name="signupUsername" required>
+                    <span class="error-message" id="signupUsernameError"></span>
+                </div>
+                
+                <div class="input-group">
+                    <label for="signupEmail">Email:</label>
+                    <input type="email" id="signupEmail" name="signupEmail" required>
+                    <span class="error-message" id="signupEmailError"></span>
+                </div>
+                
+                <div class="input-group">
+                    <label for="signupPassword">Password:</label>
+                    <input type="password" id="signupPassword" name="signupPassword" required>
+                    <span class="error-message" id="signupPasswordError"></span>
+                    <small class="password-hint">Password must be at least 8 characters with letters, numbers, and special characters</small>
+                </div>
+                
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <span class="error-message" id="confirmPasswordError"></span>
+                </div>
+                
+                <button type="submit" class="auth-btn">Sign Up</button>
+                
+                <div class="auth-links">
+                    <p>Already have an account? <a href="signin.html">Sign In</a></p>
+                    <p><a href="index.html">Back to Home</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
