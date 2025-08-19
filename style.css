@@ -262,7 +262,7 @@ nav a:visited {
 .card .title {
   font-size: 18px;
   font-weight: 700;
-  margin: 15px 0 10px;
+  margin: 25px 0 10px;
   color: #333;
 }
 
@@ -279,9 +279,9 @@ nav a:visited {
 }
 
 .card .buy:hover {
-  background: #ff3c3c;
+  background: #4CAF50;
   transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(255,60,60,0.4);
+  box-shadow: 0 5px 15px #4caf4f4f;
 }
 
 .card:hover {
