@@ -13,6 +13,7 @@ body {
 
 
 * {
+  
   padding: 0%;
   margin: 0%;
 }
@@ -305,19 +306,61 @@ nav a:visited {
 
 
 footer {
+  border-radius: 5px;
   width: 100%;
-  height: 350px;
-  background-color: rgb(0, 0, 0);
-  text-align: center;
-  position: relative;
-  margin-top: 0px;
+  height: 450px;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #fff;
+  background: radial-gradient(1200px 600px at 15% 0%, rgba(46,230,255,0.35), transparent 60%),
+              radial-gradient(800px 500px at 85% 10%, rgba(127,90,240,0.45), transparent 60%),
+              #0a0a0a; 
 }
 
-footer img {
-  width: 160px;
-  height: 150px;
-  filter: hue-rotate(100deg) saturate(3);
+.footerupper
+{
+  height: 49.95%;
+  
+  
+   display: flex;           
+  align-items: center;      
+  gap: 15px;  
 }
+.footerlower{
+  margin-top: 40px;
+}
+.footerupper h2{
+color: #00f7ff; /* neon cyan */
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 
+    0 0 4px #00f7ff,
+    0 0 10px #00f7ff,
+    0 0 20px #00f7ff;
+}
+.upperleft{
+  width: 50%;
+  text-align: center;
+  margin-right: 20px;
+}
+.middledev .line{
+  width: 100%;
+  opacity: 50%;
+  height: 1px;
+    background: radial-gradient(1200px 600px at 15% 0%, rgba(46,230,255,0.35), transparent 60%),
+              radial-gradient(800px 500px at 85% 10%, rgba(127,90,240,0.45), transparent 60%),
+              radial-gradient(1200px 600px at 15% 0%, rgba(46,230,255,0.35), transparent 60%),
+              #0a0a0a; /* solid dark background */
+ 
+  margin: auto;
+}
+.middledev
+{
+  height: 100%;
+  margin: auto;
+  width: 80%;
+}
+
+
 
 .icons {
   list-style: none;
@@ -340,10 +383,122 @@ footer img {
 }
 
 
+.subscribe-card {
+  width: 50%;
+  margin-left: 650px;
+  background: rgba(50, 20, 90, 0.4); /* semi-transparent dark purple */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(150, 100, 255, 0.2);
+  backdrop-filter: blur(8px);
+}
+.subscribe-card h3
+{
+color: #a855f7;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 
+    0 0 3px #a855f7,
+    0 0 10px #a855f7,
+    0 0 20px #a855f7;
+}
+.subscribe-card p {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
 
+.subscribe-input input{
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+.subscribe-input button {
+ background: linear-gradient(90deg, #7b2ff7, #f107a3); /* gradient */
+  border: none;
+  border-radius: 12px; /* rounded corners */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(123, 47, 247, 0.5); /* glow */
+}
 
+.lowercontainer{
+  display: flex;
+}
+.about{
+  text-align: center;
+  width: 50%;
+}
+.about h2{
+  color: #a855f7;
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: 
+    0 0 10px #a855f7,
+    0 0 10px #a855f7,
+    0 0 20px #a855f7;
+}
+.about p
+{
+  margin-top: 30px;
+opacity: 60%;
+}
+.support{
+  text-align: center;
+  width: 50%;
+}
+.support h2{
+    color: #a855f7;
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: 
+    0 0 10px #a855f7,
+    0 0 10px #a855f7,
+    0 0 20px #a855f7;
+}
+.platform-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
 
+.platform-icons .icon {
+  font-size: 28px;
+  color: #ffffff; /* neon purple */
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
 
+.platform-icons .icon:hover {
+  color: #ec4899; /* pink glow on hover */
+  transform: scale(1.2);
+}
+
+.platform-icons .separator {
+  width: 2px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.2); /* faint vertical line */
+}
+.copyright{
+  text-align: center;
+  margin-top: 30px;
+}
+.copyright h5{
+  opacity: 40%;
+  
+}
 /*---------------------------------------------------------*/
 
 
