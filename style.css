@@ -124,7 +124,7 @@ nav a:visited {
 
 .news{
   /* width: 100%; */
-  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+  
   padding: 40px 20px;
   margin-top: 20px;
 }
@@ -196,17 +196,17 @@ nav a:visited {
   }
 }
 
-.games {
+.games, .news {
   width: 100%;
   min-height: 600px;
-  background: linear-gradient(135deg, #ffffff, #f0f0f0);
-  margin-top: 60px;
+
+  margin-top: 30px;
   color: black;
   padding: 40px 0;
   text-align: center;
 }
 
-.games .section {
+.games .section, .section { 
   font-size: 32px;
   font-weight: 800;
   margin-bottom: 30px;
@@ -306,7 +306,7 @@ nav a:visited {
 
 
 footer {
-  border-radius: 5px;
+  border-top-left-radius: 5px; border-top-right-radius: 5px;
   width: 100%;
   height: 450px;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -440,13 +440,13 @@ color: #a855f7;
   width: 50%;
 }
 .about h2{
-  color: #a855f7;
+color: #00f7ff; /* neon cyan */
   font-size: 1rem;
   font-weight: bold;
   text-shadow: 
-    0 0 10px #a855f7,
-    0 0 10px #a855f7,
-    0 0 20px #a855f7;
+    0 0 4px #00f7ff,
+    0 0 10px #00f7ff,
+    0 0 20px #00f7ff;
 }
 .about p
 {
@@ -583,11 +583,13 @@ opacity: 60%;
 
 #newsContainer {
     max-width: 1200px;
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 25px;
-    padding: 0 20px;
+    padding: 0 30px;
+    border-radius: 20px;
 }
 
 .no-news-message {
